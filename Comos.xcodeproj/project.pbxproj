@@ -14,7 +14,7 @@
 		18036D252EDE34D80061C738 /* Exceptions for "Comos" folder in "Comos" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				Application/Info.plist,
 			);
 			target = 18036D122EDE34D70061C738 /* Comos */;
 		};
@@ -147,7 +147,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8MF89G73K4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Comos/Info.plist;
+				INFOPLIST_FILE = Comos/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -179,7 +179,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8MF89G73K4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Comos/Info.plist;
+				INFOPLIST_FILE = Comos/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
