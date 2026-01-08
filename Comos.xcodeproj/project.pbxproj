@@ -6,8 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		189692642F085887005A889C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18036D0B2EDE34D70061C738 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18036D122EDE34D70061C738;
+			remoteInfo = Comos;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		18036D132EDE34D70061C738 /* Comos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Comos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		187C0DAE2F10513F0052F703 /* Comos.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Comos.xctestplan; sourceTree = "<group>"; };
+		189692602F085887005A889C /* ComosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -29,10 +41,22 @@
 			path = Comos;
 			sourceTree = "<group>";
 		};
+		189692612F085887005A889C /* ComosTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ComosTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		18036D102EDE34D70061C738 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1896925D2F085887005A889C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,7 +69,9 @@
 		18036D0A2EDE34D70061C738 = {
 			isa = PBXGroup;
 			children = (
+				187C0DAE2F10513F0052F703 /* Comos.xctestplan */,
 				18036D152EDE34D70061C738 /* Comos */,
+				189692612F085887005A889C /* ComosTests */,
 				18036D142EDE34D70061C738 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				18036D132EDE34D70061C738 /* Comos.app */,
+				189692602F085887005A889C /* ComosTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +110,29 @@
 			productReference = 18036D132EDE34D70061C738 /* Comos.app */;
 			productType = "com.apple.product-type.application";
 		};
+		1896925F2F085887005A889C /* ComosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 189692682F085887005A889C /* Build configuration list for PBXNativeTarget "ComosTests" */;
+			buildPhases = (
+				1896925C2F085887005A889C /* Sources */,
+				1896925D2F085887005A889C /* Frameworks */,
+				1896925E2F085887005A889C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				189692652F085887005A889C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				189692612F085887005A889C /* ComosTests */,
+			);
+			name = ComosTests;
+			packageProductDependencies = (
+			);
+			productName = ComosTests;
+			productReference = 189692602F085887005A889C /* ComosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -95,6 +145,10 @@
 				TargetAttributes = {
 					18036D122EDE34D70061C738 = {
 						CreatedOnToolsVersion = 26.1.1;
+					};
+					1896925F2F085887005A889C = {
+						CreatedOnToolsVersion = 26.1.1;
+						TestTargetID = 18036D122EDE34D70061C738;
 					};
 				};
 			};
@@ -113,12 +167,20 @@
 			projectRoot = "";
 			targets = (
 				18036D122EDE34D70061C738 /* Comos */,
+				1896925F2F085887005A889C /* ComosTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		18036D112EDE34D70061C738 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1896925E2F085887005A889C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -135,7 +197,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1896925C2F085887005A889C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		189692652F085887005A889C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18036D122EDE34D70061C738 /* Comos */;
+			targetProxy = 189692642F085887005A889C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		18036D272EDE34D80061C738 /* Debug */ = {
@@ -321,6 +398,48 @@
 			};
 			name = Release;
 		};
+		189692662F085887005A889C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8MF89G73K4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rudrigo.ComosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Comos.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Comos";
+			};
+			name = Debug;
+		};
+		189692672F085887005A889C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8MF89G73K4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rudrigo.ComosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Comos.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Comos";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -338,6 +457,15 @@
 			buildConfigurations = (
 				18036D272EDE34D80061C738 /* Debug */,
 				18036D282EDE34D80061C738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		189692682F085887005A889C /* Build configuration list for PBXNativeTarget "ComosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				189692662F085887005A889C /* Debug */,
+				189692672F085887005A889C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
