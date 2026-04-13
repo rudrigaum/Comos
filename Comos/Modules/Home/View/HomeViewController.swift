@@ -28,6 +28,7 @@ class HomeViewController: UIViewController {
         view.backgroundColor = .systemBackground
         
         setupNavigation()
+        setupGestures()
         presenter?.viewDidLoad()
     }
     
@@ -42,6 +43,15 @@ class HomeViewController: UIViewController {
     
     @objc private func didTapRefresh() {
         presenter?.didTapRefresh()
+    }
+
+    private func setupGestures() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
+        customView?.imageView.addGestureRecognizer(tapGesture)
+    }
+
+    @objc private func imageTapped() {
+        presenter?.didTapImage(with: customView?.imageView.image)
     }
 }
 

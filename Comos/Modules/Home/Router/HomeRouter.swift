@@ -42,4 +42,12 @@ class HomeRouter: HomeRouterInput {
             self?.viewController?.present(alert, animated: true)
         }
     }
+    
+    // MARK: - Navigation
+    func routeToDetail(with entity: ApodEntity, image: UIImage?) {
+        DispatchQueue.main.async { [weak self] in
+            let detailVC = DetailRouter.createModule(with: entity, image: image)
+            self?.viewController?.navigationController?.pushViewController(detailVC, animated: true)
+        }
+    }
 }

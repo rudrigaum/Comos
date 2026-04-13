@@ -56,6 +56,7 @@ class HomeView: UIView {
         view.backgroundColor = .secondarySystemBackground
         view.clipsToBounds = true
         view.translatesAutoresizingMaskIntoConstraints = false
+        view.isUserInteractionEnabled = true
         return view
     }()
     
