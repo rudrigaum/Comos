@@ -21,6 +21,7 @@ protocol HomeViewInput: AnyObject {
 protocol HomeViewOutput: AnyObject {
     func viewDidLoad()
     func didTapRefresh()
+    func didTapImage(with currentImage: UIImage?)
 }
 
 protocol HomeInteractorOutput: AnyObject {
@@ -36,4 +37,5 @@ protocol HomeInteractorInput: AnyObject {
 // MARK: - Router
 protocol HomeRouterInput: AnyObject {
     func showAlert(title: String, message: String)
+    func routeToDetail(with entity: ApodEntity, image: UIImage?)
 }
