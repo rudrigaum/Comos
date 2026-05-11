@@ -1,0 +1,30 @@
+{
+  "configurations" : [
+    {
+      "id" : "86B851DF-05F0-44E1-AEB8-1BDA8F3DC4F5",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "performanceAntipatternCheckerEnabled" : true,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Comos.xcodeproj",
+      "identifier" : "18036D122EDE34D70061C738",
+      "name" : "Comos"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : false,
+      "target" : {
+        "containerPath" : "container:Comos.xcodeproj",
+        "identifier" : "1896925F2F085887005A889C",
+        "name" : "ComosTests"
+      }
+    }
+  ],
+  "version" : 1
+}
