@@ -65,6 +65,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18036D262EDE34D80061C738 /* Build configuration list for PBXNativeTarget "Comos" */;
 			buildPhases = (
+				18268C352F9F7AF700FAD738 /* Swiftlint */,
 				18036D0F2EDE34D70061C738 /* Sources */,
 				18036D102EDE34D70061C738 /* Frameworks */,
 				18036D112EDE34D70061C738 /* Resources */,
@@ -126,6 +127,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18268C352F9F7AF700FAD738 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		18036D0F2EDE34D70061C738 /* Sources */ = {
@@ -238,7 +261,7 @@
 				DEVELOPMENT_TEAM = 8MF89G73K4;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -302,7 +325,7 @@
 				DEVELOPMENT_TEAM = 8MF89G73K4;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

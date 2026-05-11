@@ -1,0 +1,26 @@
+disabled_rules: # Regras que não queremos usar
+  - trailing_whitespace
+  - line_length
+
+opt_in_rules: # Regras extras que queremos ativar
+  - empty_count
+  - force_unwrapping
+  - closure_spacing
+  - let_var_whitespace
+
+excluded: # Pastas que o linter deve ignorar
+  - Pods
+  - build
+  - .build
+  - CosmosTests/ # Opcional: ignorar linter nos testes se preferir
+
+force_cast: warning # Transforma crash de force cast em warning
+force_try: warning
+
+type_body_length:
+  warning: 300
+  error: 400
+
+file_length:
+  warning: 500
+  error: 1000
