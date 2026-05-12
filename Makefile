@@ -2,7 +2,7 @@
 PROJECT_NAME = Comos
 SCHEME_NAME = Comos
 TEST_SCHEME = Comos
-DESTINATION = platform=iOS Simulator,name=iPhone 15 Pro,OS=latest
+DESTINATION = platform=iOS Simulator,name=iPhone 16 Pro,OS=latest
 
 .PHONY: build test clean help
 
