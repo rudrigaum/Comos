@@ -1,0 +1,22 @@
+name: iOS Continuous Integration
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    name: Build, Lint and Test
+    runs-on: macos-14 # Garante uma versão recente do macOS e do Xcode
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: 🛠️ Install SwiftLint
+        run: brew install swiftlint
+
+      - name: 🧪 Run Tests (and Lint via Build Phases)
+        run: make test
