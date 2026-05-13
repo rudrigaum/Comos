@@ -64,12 +64,21 @@ class HomeInteractorSpy: HomeInteractorInput {
 class HomeRouterSpy: HomeRouterInput {
     
     var showAlertCalled = false
+    var routeToDetailCalled = false
     var passedTitle: String?
     var passedMessage: String?
-    
+    var passedEntity: ApodEntity?
+    var passedImage: UIImage?
+
     func showAlert(title: String, message: String) {
         showAlertCalled = true
         passedTitle = title
         passedMessage = message
+    }
+
+    func routeToDetail(with entity: ApodEntity, image: UIImage?) {
+        routeToDetailCalled = true
+        passedEntity = entity
+        passedImage = image
     }
 }
