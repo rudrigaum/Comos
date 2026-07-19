@@ -1,7 +1,7 @@
 # Project Variables
-PROJECT_NAME = Comos
-SCHEME_NAME = Comos
-TEST_SCHEME = Comos
+PROJECT_NAME = Cosmos
+SCHEME_NAME = Cosmos
+TEST_SCHEME = Cosmos
 DESTINATION = platform=iOS Simulator,name=iPhone 16 Pro,OS=latest
 
 .PHONY: build test clean help
